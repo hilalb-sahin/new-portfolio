@@ -15,9 +15,9 @@ html{
     font-family: "Helvetica", "Arial", sans-serif;
     display: inline-block;
     font-size: 1em;
-    padding: 1em 2em;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 6px;
     -webkit-appearance: none;
     -moz-appearance: none;
          appearance: none;
@@ -29,6 +29,7 @@ html{
     position: relative;
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
     box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+    text-decoration: none;
 }
 
 body{
@@ -36,15 +37,7 @@ body{
     scroll-snap-type: y mandatory;
     overflow-y: scroll ;
 }
-#container{
 
-    width:100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 40px 40px;
-}
 header#section1{
     height:100vh;
 }
@@ -53,11 +46,8 @@ h1,h2{
     animation: glow 2s ease-in-out infinite alternate;
 }
 
-#description{
-    margin: 50px;
-}
 
-#container.first{
+.container.first{
 
     justify-content: flex-start;
     align-items: center;
@@ -145,7 +135,7 @@ p{
 }
 
 div.projectDetail{
-    display: none;
+    display: block;
 }
 
 #projectName{
@@ -212,9 +202,6 @@ div.projectDetail{
     }
 }
 
-  
-
-  
 
 @keyframes focusOut{
     0%{
@@ -241,22 +228,6 @@ div.projectDetail{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #text{
     color:aliceblue;
 }
@@ -269,7 +240,7 @@ body{
     
 
 }
-#container{
+.container{
 
     width:100%;
     margin:0 0 200px;
@@ -294,4 +265,14 @@ body{
     0 0 50px #fff,            /* outer white */
     -10px 0 80px #f0f,        /* outer left magenta */
     10px 0 80px #0ff;         /* outer right cyan */
+}
+
+
+#test-div{
+    background-color: red;
+}
+
+#project-img{
+    width  : 300px;
+    height : 200px;
 }
