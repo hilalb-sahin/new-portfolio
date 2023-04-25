@@ -35,10 +35,7 @@ for (let idx = 0; idx < projects.length; idx++) {
   
   let projectDetailDiv = document.createElement("div");
   projectDetailDiv.classList.add("projectDetail");
-  
-  let descriptionP = document.createElement("p");
-  descriptionP.id = "description";
-  descriptionP.innerHTML = projects[idx].description;
+
 
   //appending the elements
   
